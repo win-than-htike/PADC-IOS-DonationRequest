@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FE7096A21B3BD9C00AD3C6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7096921B3BD9C00AD3C6D /* GoogleService-Info.plist */; };
+		8E3E8D679336B753F5DBA38A /* Pods_PADC_IOS_DonationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAC4CE662AEDB47A91B3AC2 /* Pods_PADC_IOS_DonationRequest.framework */; };
 		99C0912A21B3B766000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0912921B3B766000F6CAE /* AppDelegate.swift */; };
 		99C0912C21B3B766000F6CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0912B21B3B766000F6CAE /* ViewController.swift */; };
 		99C0912F21B3B766000F6CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C0912D21B3B766000F6CAE /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-DonationRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE7096921B3BD9C00AD3C6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EAC4CE662AEDB47A91B3AC2 /* Pods_PADC_IOS_DonationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_DonationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0912621B3B766000F6CAE /* PADC-IOS-DonationRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-DonationRequest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0912921B3B766000F6CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99C0912B21B3B766000F6CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		99C0913021B3B766000F6CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99C0913321B3B766000F6CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99C0913521B3B766000F6CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54EE4E024A9423D5618F248 /* Pods-PADC-IOS-DonationRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-DonationRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3E8D679336B753F5DBA38A /* Pods_PADC_IOS_DonationRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A9EF241FBC6BF95AE2D35E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC4CE662AEDB47A91B3AC2 /* Pods_PADC_IOS_DonationRequest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99C0911D21B3B766000F6CAE = {
 			isa = PBXGroup;
 			children = (
 				99C0912821B3B766000F6CAE /* PADC-IOS-DonationRequest */,
 				99C0912721B3B766000F6CAE /* Products */,
+				E38B729843F946565FBF2EFF /* Pods */,
+				7A9EF241FBC6BF95AE2D35E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +76,19 @@
 				99C0912D21B3B766000F6CAE /* Main.storyboard */,
 				99C0913021B3B766000F6CAE /* Assets.xcassets */,
 				99C0913221B3B766000F6CAE /* LaunchScreen.storyboard */,
+				4FE7096921B3BD9C00AD3C6D /* GoogleService-Info.plist */,
 				99C0913521B3B766000F6CAE /* Info.plist */,
 			);
 			path = "PADC-IOS-DonationRequest";
+			sourceTree = "<group>";
+		};
+		E38B729843F946565FBF2EFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */,
+				A54EE4E024A9423D5618F248 /* Pods-PADC-IOS-DonationRequest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99C0913821B3B766000F6CAE /* Build configuration list for PBXNativeTarget "PADC-IOS-DonationRequest" */;
 			buildPhases = (
+				17C2DEAC62BC4702FF9C6865 /* [CP] Check Pods Manifest.lock */,
 				99C0912221B3B766000F6CAE /* Sources */,
 				99C0912321B3B766000F6CAE /* Frameworks */,
 				99C0912421B3B766000F6CAE /* Resources */,
+				6BBBF3AF7A735619E0B8C0AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C0913421B3B766000F6CAE /* LaunchScreen.storyboard in Resources */,
+				4FE7096A21B3BD9C00AD3C6D /* GoogleService-Info.plist in Resources */,
 				99C0913121B3B766000F6CAE /* Assets.xcassets in Resources */,
 				99C0912F21B3B766000F6CAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C2DEAC62BC4702FF9C6865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PADC-IOS-DonationRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBBF3AF7A735619E0B8C0AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99C0912221B3B766000F6CAE /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		99C0913921B3B766000F6CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +377,7 @@
 		};
 		99C0913A21B3B766000F6CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54EE4E024A9423D5618F248 /* Pods-PADC-IOS-DonationRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

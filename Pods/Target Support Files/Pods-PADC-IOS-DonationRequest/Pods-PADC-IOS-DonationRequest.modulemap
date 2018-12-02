@@ -1,0 +1,6 @@
+framework module Pods_PADC_IOS_DonationRequest {
+  umbrella header "Pods-PADC-IOS-DonationRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
