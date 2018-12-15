@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4FBD09CE21C4CEE900506E45 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09CD21C4CEE900506E45 /* CustomButton.swift */; };
 		4FBD09D021C4CF4E00506E45 /* ShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09CF21C4CF4E00506E45 /* ShadowTextField.swift */; };
+		4FBD09D221C4DC3B00506E45 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */; };
+		4FBD09D421C4DEDF00506E45 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09D321C4DEDF00506E45 /* PostListViewController.swift */; };
+		4FBD09D621C4DF3E00506E45 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09D521C4DF3E00506E45 /* ProfileViewController.swift */; };
 		4FE7096A21B3BD9C00AD3C6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FE7096921B3BD9C00AD3C6D /* GoogleService-Info.plist */; };
 		8E3E8D679336B753F5DBA38A /* Pods_PADC_IOS_DonationRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAC4CE662AEDB47A91B3AC2 /* Pods_PADC_IOS_DonationRequest.framework */; };
 		99C0912A21B3B766000F6CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C0912921B3B766000F6CAE /* AppDelegate.swift */; };
@@ -22,6 +25,9 @@
 		0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-DonationRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest.debug.xcconfig"; sourceTree = "<group>"; };
 		4FBD09CD21C4CEE900506E45 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4FBD09CF21C4CF4E00506E45 /* ShadowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTextField.swift; sourceTree = "<group>"; };
+		4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		4FBD09D321C4DEDF00506E45 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		4FBD09D521C4DF3E00506E45 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4FE7096921B3BD9C00AD3C6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8EAC4CE662AEDB47A91B3AC2 /* Pods_PADC_IOS_DonationRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PADC_IOS_DonationRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C0912621B3B766000F6CAE /* PADC-IOS-DonationRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PADC-IOS-DonationRequest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				99C0912B21B3B766000F6CAE /* ViewController.swift */,
+				4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */,
+				4FBD09D321C4DEDF00506E45 /* PostListViewController.swift */,
+				4FBD09D521C4DF3E00506E45 /* ProfileViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -278,7 +287,10 @@
 			files = (
 				99C0912C21B3B766000F6CAE /* ViewController.swift in Sources */,
 				99C0912A21B3B766000F6CAE /* AppDelegate.swift in Sources */,
+				4FBD09D221C4DC3B00506E45 /* PostDetailViewController.swift in Sources */,
 				4FBD09CE21C4CEE900506E45 /* CustomButton.swift in Sources */,
+				4FBD09D621C4DF3E00506E45 /* ProfileViewController.swift in Sources */,
+				4FBD09D421C4DEDF00506E45 /* PostListViewController.swift in Sources */,
 				4FBD09D021C4CF4E00506E45 /* ShadowTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
