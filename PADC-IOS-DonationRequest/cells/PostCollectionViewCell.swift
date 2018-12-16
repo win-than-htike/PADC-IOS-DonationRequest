@@ -13,6 +13,7 @@ class PostCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblPostedDate: UILabel!
     @IBOutlet weak var lblPostContent: UILabel!
     @IBOutlet weak var ivPostCreatorImage: UIImageView!
+    @IBOutlet weak var lblLocation: UILabel!
     
     var p: PostVO!
     
@@ -25,7 +26,8 @@ class PostCollectionViewCell: UICollectionViewCell {
         ivPostCreatorImage.layer.cornerRadius = 12
         lblPostContent.text = post.desc
 //        lblPostedDate.text = post.donationDate as? String
-        lblPostCreaterName.text = post.id
+        lblPostedDate.text = post.date
+        lblLocation.text = post.location
 
     }
     

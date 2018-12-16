@@ -322,6 +322,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rtk-Cm-Aoc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.26114412349999999" green="0.74016497459999997" blue="0.2969784124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="S3n-in-pcK" kind="relationship" relationship="rootViewController" id="xlv-Nw-EtX"/>
@@ -398,7 +401,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YVI-Qf-zW3">
-                                <rect key="frame" x="8" y="112" width="359" height="514"/>
+                                <rect key="frame" x="8" y="144" width="359" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yZz-st-6zt">
                                     <size key="itemSize" width="50" height="50"/>
@@ -409,7 +412,7 @@
                                 <cells/>
                             </collectionView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-AJ-4fn" customClass="DropDown" customModule="iOSDropDown">
-                                <rect key="frame" x="267" y="72" width="100" height="30"/>
+                                <rect key="frame" x="267" y="108" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="794-8j-Mst"/>
                                 </constraints>
@@ -431,21 +434,30 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter By Region" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-8m-IUQ">
-                                <rect key="frame" x="16" y="80" width="125.5" height="20"/>
+                                <rect key="frame" x="16" y="108" width="125.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-6F-cjv">
+                                <rect key="frame" x="327" y="64" width="32" height="30"/>
+                                <state key="normal" title="Add "/>
+                                <connections>
+                                    <action selector="btnAddNewPost:" destination="Nrh-oE-bV9" eventType="touchUpInside" id="TmW-BZ-Gqn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YVI-Qf-zW3" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="48" id="3Si-YI-Xaf"/>
+                            <constraint firstItem="YVI-Qf-zW3" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="80" id="3Si-YI-Xaf"/>
                             <constraint firstItem="J5Z-O8-JJX" firstAttribute="trailing" secondItem="YVI-Qf-zW3" secondAttribute="trailing" constant="8" id="3kH-9z-INO"/>
-                            <constraint firstItem="wiK-8m-IUQ" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="16" id="HR7-NK-UUt"/>
+                            <constraint firstItem="wiK-8m-IUQ" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="44" id="HR7-NK-UUt"/>
                             <constraint firstItem="YVI-Qf-zW3" firstAttribute="leading" secondItem="J5Z-O8-JJX" secondAttribute="leading" constant="8" id="Ss3-uW-Ch5"/>
                             <constraint firstItem="J5Z-O8-JJX" firstAttribute="trailing" secondItem="nCZ-AJ-4fn" secondAttribute="trailing" constant="8" id="Uci-9M-1PZ"/>
-                            <constraint firstItem="nCZ-AJ-4fn" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="8" id="caO-wZ-ahT"/>
+                            <constraint firstItem="nCZ-AJ-4fn" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" constant="44" id="caO-wZ-ahT"/>
                             <constraint firstItem="YVI-Qf-zW3" firstAttribute="bottom" secondItem="J5Z-O8-JJX" secondAttribute="bottom" constant="8" id="pJd-c2-3VS"/>
+                            <constraint firstItem="J5Z-O8-JJX" firstAttribute="trailing" secondItem="eVH-6F-cjv" secondAttribute="trailing" constant="16" id="paO-Xt-nFe"/>
+                            <constraint firstItem="eVH-6F-cjv" firstAttribute="top" secondItem="J5Z-O8-JJX" secondAttribute="top" id="sYE-Ab-UZK"/>
                             <constraint firstItem="wiK-8m-IUQ" firstAttribute="leading" secondItem="J5Z-O8-JJX" secondAttribute="leading" constant="16" id="wKx-LM-gaC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J5Z-O8-JJX"/>
@@ -463,10 +475,8 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Rgo-1G-Hah">
             <objects>
-                <tabBarController storyboardIdentifier="Post" id="S3n-in-pcK" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="nYD-Oh-oVO">
-                        <barButtonItem key="rightBarButtonItem" title="Add" image="icons8-add" id="rSA-9R-hY7"/>
-                    </navigationItem>
+                <tabBarController id="S3n-in-pcK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nYD-Oh-oVO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6SU-3b-Ojo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -789,16 +799,12 @@
     </scenes>
     <resources>
         <image name="back" width="25" height="25"/>
-
-        <image name="icons8-add" width="32" height="32"/>
+        <image name="donation_request_logo" width="63" height="50"/>
         <image name="icons8-navigation_filled" width="32" height="32"/>
+        <image name="placeholder" width="491" height="491"/>
         <image name="post_selected_tab" width="32" height="32"/>
         <image name="post_unselected_tab" width="32" height="32"/>
         <image name="profile_tab_selected" width="32" height="32"/>
         <image name="profile_tab_unselected" width="32" height="32"/>
-
-        <image name="donation_request_logo" width="63" height="50"/>
-        <image name="placeholder" width="491" height="491"/>
-
     </resources>
 </document>

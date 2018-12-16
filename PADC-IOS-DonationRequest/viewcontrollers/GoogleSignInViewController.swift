@@ -69,19 +69,3 @@ class GoogleSignInViewController: UIViewController, GIDSignInDelegate, GIDSignIn
 }
 
 
-extension UIViewController {
-    
-    public func showAlertDialog(inputTitle: String = "Message", inputMessage: String, alertActionTitle: String = "OK!") {
-        let alert = UIAlertController(title: inputTitle, message: inputMessage, preferredStyle: UIAlertController.Style.alert)
-        let alertAction = UIAlertAction(title: alertActionTitle, style: UIAlertAction.Style.default)
-        {
-            (UIAlertAction) -> Void in
-        }
-        alert.addAction(alertAction)
-        present(alert, animated: true)
-        {
-            () -> Void in
-        }
-    }
-    
-}

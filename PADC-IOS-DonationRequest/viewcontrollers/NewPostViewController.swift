@@ -67,7 +67,7 @@ class NewPostViewController: UIViewController {
             self.present(loginViewController, animated: true, completion: nil)
             
         }) {
-            self.showAlertDialog(inputMessage: "New post failed, try again!")
+           
         }
         
     }

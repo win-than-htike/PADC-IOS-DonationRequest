@@ -12,6 +12,11 @@ import ProgressHUD
 
 class PostListViewController: UIViewController {
 
+    @IBAction func btnAddNewPost(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "NewPostViewController") as! NewPostViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+   
     @IBOutlet weak var locationList: DropDown!
     @IBOutlet weak var collectionViewPosts: UICollectionView!
     var postList : [PostVO] = []
@@ -87,7 +92,7 @@ extension PostListViewController : UICollectionViewDataSource {
         }
         
         if section == 1 {
-            return typeList.count
+            return 1
         }
         
         return 1
@@ -119,7 +124,7 @@ extension PostListViewController : UICollectionViewDelegate, UICollectionViewDel
             let collectionViewSize = collectionView.frame.size.width - padding
             return CGSize(width: collectionViewSize, height: 160)
         }else{
-            return CGSize(width: self.view.frame.width, height: 200)
+            return CGSize(width: self.view.frame.width, height: 500)
         }
     }
     

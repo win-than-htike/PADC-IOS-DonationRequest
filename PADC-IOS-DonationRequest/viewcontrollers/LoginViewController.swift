@@ -71,7 +71,7 @@ class LoginViewController: BaseViewController {
         DataModel.shared.login(email: tfEmail.text!, password: tfPassword.text!, success: {
             
             self.hideLoading()
-            let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! UINavigationController
+            let navigationController = self.storyboard?.instantiateViewController(withIdentifier: "PostListViewController") as! UINavigationController
             self.present(navigationController, animated: true, completion: nil)
             
         }, failure: {

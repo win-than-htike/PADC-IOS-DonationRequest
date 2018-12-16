@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Js-ag-qam" customClass="CardView" customModule="PADC_IOS_DonationRequest" customModuleProvider="target">
                                 <rect key="frame" x="4" y="4" width="355" height="130"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_unselected_tab" translatesAutoresizingMaskIntoConstraints="NO" id="UdJ-z3-V8u">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the_new_evil" translatesAutoresizingMaskIntoConstraints="NO" id="UdJ-z3-V8u">
                                         <rect key="frame" x="8" y="8" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="bNW-9T-ND0"/>
@@ -38,13 +38,30 @@
                                             <constraint firstAttribute="width" constant="12" id="kqx-LA-adB"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-navigation_filled" translatesAutoresizingMaskIntoConstraints="NO" id="Yac-cr-Wsc">
+                                        <rect key="frame" x="16" y="102" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="UAJ-o9-zcq"/>
+                                            <constraint firstAttribute="height" constant="12" id="xBQ-Cp-pcd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-wu-E1y">
+                                        <rect key="frame" x="36" y="104" width="22" height="10"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="0nI-8u-l2x" firstAttribute="top" secondItem="UdJ-z3-V8u" secondAttribute="bottom" constant="8" id="DJD-Q7-yRC"/>
+                                    <constraint firstItem="Yac-cr-Wsc" firstAttribute="leading" secondItem="5Js-ag-qam" secondAttribute="leading" constant="16" id="P8E-M0-sgO"/>
                                     <constraint firstItem="UdJ-z3-V8u" firstAttribute="top" secondItem="5Js-ag-qam" secondAttribute="top" constant="8" id="T9p-tS-eav"/>
+                                    <constraint firstAttribute="bottom" secondItem="t3w-wu-E1y" secondAttribute="bottom" constant="16" id="Ugs-mj-qJh"/>
                                     <constraint firstItem="0nI-8u-l2x" firstAttribute="leading" secondItem="5Js-ag-qam" secondAttribute="leading" constant="16" id="auf-6b-Uri"/>
+                                    <constraint firstItem="t3w-wu-E1y" firstAttribute="leading" secondItem="Yac-cr-Wsc" secondAttribute="trailing" constant="8" id="hTN-7t-dhR"/>
                                     <constraint firstItem="UdJ-z3-V8u" firstAttribute="leading" secondItem="5Js-ag-qam" secondAttribute="leading" constant="8" id="mKq-79-O9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yac-cr-Wsc" secondAttribute="bottom" constant="16" id="uGS-90-Ik8"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
@@ -55,7 +72,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Creater Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaA-06-2Hf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ye Ko Ko Htet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaA-06-2Hf">
                                 <rect key="frame" x="48" y="16" width="307" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -124,6 +141,7 @@
             <size key="customSize" width="363" height="138"/>
             <connections>
                 <outlet property="ivPostCreatorImage" destination="UdJ-z3-V8u" id="QJh-fL-LVG"/>
+                <outlet property="lblLocation" destination="t3w-wu-E1y" id="St1-Hy-WZJ"/>
                 <outlet property="lblPostContent" destination="dEF-4W-Wqy" id="44N-3V-OV1"/>
                 <outlet property="lblPostCreaterName" destination="NaA-06-2Hf" id="vnG-oi-R6r"/>
                 <outlet property="lblPostedDate" destination="ij3-Uf-2G1" id="KUQ-eZ-Nhc"/>
@@ -133,6 +151,7 @@
     </objects>
     <resources>
         <image name="icons8-clock" width="25" height="25"/>
-        <image name="post_unselected_tab" width="32" height="32"/>
+        <image name="icons8-navigation_filled" width="32" height="32"/>
+        <image name="the_new_evil" width="120" height="184.19999694824219"/>
     </resources>
 </document>

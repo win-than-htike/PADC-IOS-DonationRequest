@@ -11,7 +11,11 @@ import UIKit
 class TypeListsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var typeListCollectionView: UICollectionView!
     
-    var typeList: [DonationTypesVO] = []
+    var typeList: [DonationTypesVO] = [] {
+        didSet{
+            typeListCollectionView.reloadData()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

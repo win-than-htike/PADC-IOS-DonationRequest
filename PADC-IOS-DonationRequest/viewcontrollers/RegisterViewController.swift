@@ -36,15 +36,10 @@ class RegisterViewController: BaseViewController, UIImagePickerControllerDelegat
     @IBAction func btnRegister(_ sender: Any) {
         
         if tfPassword.text!.isEmpty {
-            showAlertDialog(inputMessage: "Password is Empty!")
+            self.showAlertDialog(inputMessage: "Password is Empty!")
             return
         }
-        
-        if tfConfirmPassword.text!.isEmpty {
-            showAlertDialog(inputMessage: "Confirm Password is Empty!")
-            return
-        }
-        
+      
         if tfPassword.text! == tfConfirmPassword.text! {
             
             let user = UserVO()
