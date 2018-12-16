@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DonationHistoryCollectionViewCell" customModule="PADC_IOS_DonationRequest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="419"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="419"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahw-v1-wnF">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="419"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbm-ur-U82">
+                                <rect key="frame" x="16" y="32" width="338" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created with love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLF-eh-8lA">
+                                <rect key="frame" x="16" y="61" width="338" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrD-fD-awV">
+                                <rect key="frame" x="16" y="83.5" width="338" height="41.5"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="32"/>
+                                <color key="textColor" red="0.99282201776649748" green="0.21593612822525765" blue="0.57185429352711392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM5-oK-JSQ">
+                                <rect key="frame" x="16" y="127" width="338" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DAb-c0-68l">
+                                <rect key="frame" x="16" y="149.5" width="338" height="253.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ASZ-sR-fgI">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iM5-oK-JSQ" firstAttribute="top" secondItem="BrD-fD-awV" secondAttribute="bottom" constant="2" id="0q6-TP-l3P"/>
+                            <constraint firstItem="tLF-eh-8lA" firstAttribute="leading" secondItem="Ahw-v1-wnF" secondAttribute="leading" constant="16" id="2G7-pi-tSH"/>
+                            <constraint firstItem="fbm-ur-U82" firstAttribute="leading" secondItem="Ahw-v1-wnF" secondAttribute="leading" constant="16" id="4Dn-6P-tVe"/>
+                            <constraint firstItem="iM5-oK-JSQ" firstAttribute="leading" secondItem="Ahw-v1-wnF" secondAttribute="leading" constant="16" id="Bbb-R1-kpw"/>
+                            <constraint firstAttribute="bottom" secondItem="DAb-c0-68l" secondAttribute="bottom" constant="16" id="BoE-Bf-aZc"/>
+                            <constraint firstAttribute="trailing" secondItem="iM5-oK-JSQ" secondAttribute="trailing" constant="16" id="DFt-te-x0h"/>
+                            <constraint firstItem="fbm-ur-U82" firstAttribute="top" secondItem="Ahw-v1-wnF" secondAttribute="top" constant="32" id="GyP-OU-yQh"/>
+                            <constraint firstItem="BrD-fD-awV" firstAttribute="top" secondItem="tLF-eh-8lA" secondAttribute="bottom" constant="8" id="QMZ-9F-ek4"/>
+                            <constraint firstItem="BrD-fD-awV" firstAttribute="leading" secondItem="Ahw-v1-wnF" secondAttribute="leading" constant="16" id="VDY-aa-vd2"/>
+                            <constraint firstItem="DAb-c0-68l" firstAttribute="leading" secondItem="Ahw-v1-wnF" secondAttribute="leading" constant="16" id="byW-Bl-t0J"/>
+                            <constraint firstAttribute="trailing" secondItem="BrD-fD-awV" secondAttribute="trailing" constant="16" id="ePL-jr-VCS"/>
+                            <constraint firstItem="DAb-c0-68l" firstAttribute="top" secondItem="iM5-oK-JSQ" secondAttribute="bottom" constant="8" id="fxb-S2-WV4"/>
+                            <constraint firstItem="tLF-eh-8lA" firstAttribute="top" secondItem="fbm-ur-U82" secondAttribute="bottom" constant="4" id="lWg-kh-RLk"/>
+                            <constraint firstAttribute="trailing" secondItem="DAb-c0-68l" secondAttribute="trailing" constant="16" id="rd7-Oz-Ibf"/>
+                            <constraint firstAttribute="trailing" secondItem="tLF-eh-8lA" secondAttribute="trailing" constant="16" id="z24-jc-BYd"/>
+                            <constraint firstAttribute="trailing" secondItem="fbm-ur-U82" secondAttribute="trailing" constant="16" id="zjF-FR-a4q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ahw-v1-wnF" secondAttribute="trailing" id="6t8-HC-eXH"/>
+                <constraint firstItem="Ahw-v1-wnF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8u7-O6-bWX"/>
+                <constraint firstItem="Ahw-v1-wnF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IFx-8h-b1T"/>
+                <constraint firstAttribute="bottom" secondItem="Ahw-v1-wnF" secondAttribute="bottom" id="h1N-Dk-Ey0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="370" height="419"/>
+            <connections>
+                <outlet property="collectionViewDonationHistory" destination="DAb-c0-68l" id="22s-fy-Ivg"/>
+            </connections>
+            <point key="canvasLocation" x="393.60000000000002" y="277.51124437781112"/>
+        </collectionViewCell>
+    </objects>
+</document>
