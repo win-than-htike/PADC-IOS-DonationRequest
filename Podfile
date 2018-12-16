@@ -7,12 +7,13 @@ target 'PADC-IOS-DonationRequest' do
 
   # Pods for PADC-IOS-DonationRequest
 pod 'Firebase/Core'
-pod 'Firebase/Auth'
+pod 'iOSDropDown'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
-pod 'GoogleSignIn'
-pod 'SDWebImage/WebP'
+pod 'ProgressHUD'
 pod 'SDWebImage', '~> 4.0'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
 pod 'JGProgressHUD'
 
 end

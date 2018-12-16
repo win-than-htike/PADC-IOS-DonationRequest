@@ -2,11 +2,14 @@
 //  NetworkManager.swift
 //  PADC-IOS-DonationRequest
 //
-//  Created by Ye Ko Ko Htet on 12/16/18.
+
+//  Created by Ye Pyae Sone Tun on 12/15/18.
+
 //  Copyright © 2018 padcmyanmar. All rights reserved.
 //
 
 import Foundation
+
 import Firebase
 import FirebaseDatabase
 import FirebaseStorage
@@ -18,6 +21,7 @@ class NetworkManager {
     let storageRef = Storage.storage().reference().child("profile_images")
     
     private init() {
+
         rootRef = Database.database().reference()
     }
     
@@ -30,6 +34,38 @@ class NetworkManager {
         return networkManager
     }()
     
+
+    func loadPosts(success: @escaping ([PostVO]) -> Void,failure: @escaping () -> Void ) {
+        rootRef.child("donations").observe(.value) { (dataSnapshot) in
+            if let posts = dataSnapshot.children.allObjects as? [DataSnapshot] {
+                var postList : [PostVO] = []
+                
+                for post in posts {
+                    if let value = post.value as? [String: AnyObject]{
+                        postList.append(PostVO.parseToPostVO(json: value))
+                    }
+                }
+                
+                success(postList)
+            }
+        }
+    }
+    
+    func loadDonationTypes(success: @escaping (([DonationTypesVO]) -> Void), failure: @escaping () -> Void) {
+        rootRef.child("donationTypes").observe(.value) { (dataSnapshot) in
+            if let types = dataSnapshot.children.allObjects as? [DataSnapshot] {
+                var typeList : [DonationTypesVO] = []
+                
+                for type in types {
+                    if let value = type.value as? [String: AnyObject] {
+                        typeList.append(DonationTypesVO.parseToDonationTypesVO(json: value))
+                    }
+                }
+                success(typeList)
+            }
+        }
+    }
+
     func addPost(donationPost : DonationPostVO, success : @escaping () -> Void, failure : @escaping () -> Void) {
         
         rootRef.child("donations").child(donationPost.id).setValue(DonationPostVO.parseToDictionary(donationPost: donationPost))
@@ -146,4 +182,5 @@ class NetworkManager {
         
     }
     
+
 }
