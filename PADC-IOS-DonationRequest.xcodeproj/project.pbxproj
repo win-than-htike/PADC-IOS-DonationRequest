@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A026BB21C4E4810033137E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A026BA21C4E4810033137E /* LoginViewController.swift */; };
+		34A026BD21C4F8EE0033137E /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A026BC21C4F8EE0033137E /* NewPostViewController.swift */; };
+		34A026C121C50FB00033137E /* CustomUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A026C021C50FB00033137E /* CustomUITextView.swift */; };
+		34A026C321C51D6E0033137E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A026C221C51D6E0033137E /* CardView.swift */; };
+		34CF02A021C5653500CA53A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF029F21C5653500CA53A4 /* BaseViewController.swift */; };
+		34CF02A221C5661400CA53A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02A121C5661400CA53A4 /* Extensions.swift */; };
+		34CF02A521C585B800CA53A4 /* DonationPostVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02A421C585B800CA53A4 /* DonationPostVO.swift */; };
+		34CF02A821C5E2E700CA53A4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02A721C5E2E700CA53A4 /* NetworkManager.swift */; };
+		34CF02AA21C5E54800CA53A4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02A921C5E54800CA53A4 /* DataModel.swift */; };
+		34CF02AC21C5FEAD00CA53A4 /* UserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02AB21C5FEAD00CA53A4 /* UserVO.swift */; };
+		34CF02AE21C61F9200CA53A4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF02AD21C61F9200CA53A4 /* RegisterViewController.swift */; };
 		4FBD09CE21C4CEE900506E45 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09CD21C4CEE900506E45 /* CustomButton.swift */; };
 		4FBD09D021C4CF4E00506E45 /* ShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09CF21C4CF4E00506E45 /* ShadowTextField.swift */; };
 		4FBD09D221C4DC3B00506E45 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */; };
@@ -23,6 +34,17 @@
 
 /* Begin PBXFileReference section */
 		0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PADC-IOS-DonationRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		34A026BA21C4E4810033137E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34A026BC21C4F8EE0033137E /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		34A026C021C50FB00033137E /* CustomUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextView.swift; sourceTree = "<group>"; };
+		34A026C221C51D6E0033137E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		34CF029F21C5653500CA53A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		34CF02A121C5661400CA53A4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		34CF02A421C585B800CA53A4 /* DonationPostVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationPostVO.swift; path = "PADC-IOS-DonationRequest/components/DonationPostVO.swift"; sourceTree = SOURCE_ROOT; };
+		34CF02A721C5E2E700CA53A4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		34CF02A921C5E54800CA53A4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = "PADC-IOS-DonationRequest/network/DataModel.swift"; sourceTree = SOURCE_ROOT; };
+		34CF02AB21C5FEAD00CA53A4 /* UserVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserVO.swift; path = "PADC-IOS-DonationRequest/network/UserVO.swift"; sourceTree = SOURCE_ROOT; };
+		34CF02AD21C61F9200CA53A4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4FBD09CD21C4CEE900506E45 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		4FBD09CF21C4CF4E00506E45 /* ShadowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowTextField.swift; sourceTree = "<group>"; };
 		4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
@@ -52,13 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34CF02A621C5E2CF00CA53A4 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				34CF02A721C5E2E700CA53A4 /* NetworkManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
 		4FBD09C621C4CDA700506E45 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				34A026BC21C4F8EE0033137E /* NewPostViewController.swift */,
+				34A026BA21C4E4810033137E /* LoginViewController.swift */,
 				99C0912B21B3B766000F6CAE /* ViewController.swift */,
 				4FBD09D121C4DC3B00506E45 /* PostDetailViewController.swift */,
 				4FBD09D321C4DEDF00506E45 /* PostListViewController.swift */,
 				4FBD09D521C4DF3E00506E45 /* ProfileViewController.swift */,
+				34CF029F21C5653500CA53A4 /* BaseViewController.swift */,
+				34CF02AD21C61F9200CA53A4 /* RegisterViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -91,6 +125,9 @@
 			children = (
 				4FBD09CD21C4CEE900506E45 /* CustomButton.swift */,
 				4FBD09CF21C4CF4E00506E45 /* ShadowTextField.swift */,
+				34A026C021C50FB00033137E /* CustomUITextView.swift */,
+				34A026C221C51D6E0033137E /* CardView.swift */,
+				34CF02A121C5661400CA53A4 /* Extensions.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -98,6 +135,8 @@
 		4FBD09CB21C4CE6E00506E45 /* vos */ = {
 			isa = PBXGroup;
 			children = (
+				34CF02A421C585B800CA53A4 /* DonationPostVO.swift */,
+				34CF02AB21C5FEAD00CA53A4 /* UserVO.swift */,
 			);
 			path = vos;
 			sourceTree = "<group>";
@@ -105,6 +144,7 @@
 		4FBD09CC21C4CE7500506E45 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				34CF02A921C5E54800CA53A4 /* DataModel.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -138,6 +178,7 @@
 		99C0912821B3B766000F6CAE /* PADC-IOS-DonationRequest */ = {
 			isa = PBXGroup;
 			children = (
+				34CF02A621C5E2CF00CA53A4 /* network */,
 				4FBD09CC21C4CE7500506E45 /* data */,
 				4FBD09CB21C4CE6E00506E45 /* vos */,
 				4FBD09CA21C4CE6400506E45 /* components */,
@@ -174,6 +215,7 @@
 				99C0912321B3B766000F6CAE /* Frameworks */,
 				99C0912421B3B766000F6CAE /* Resources */,
 				6BBBF3AF7A735619E0B8C0AB /* [CP] Embed Pods Frameworks */,
+				FD839396C58A6D9AF0BE611A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,19 +305,55 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD839396C58A6D9AF0BE611A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PADC-IOS-DonationRequest/Pods-PADC-IOS-DonationRequest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -289,8 +367,19 @@
 				99C0912A21B3B766000F6CAE /* AppDelegate.swift in Sources */,
 				4FBD09D221C4DC3B00506E45 /* PostDetailViewController.swift in Sources */,
 				4FBD09CE21C4CEE900506E45 /* CustomButton.swift in Sources */,
+				34CF02A521C585B800CA53A4 /* DonationPostVO.swift in Sources */,
+				34CF02AA21C5E54800CA53A4 /* DataModel.swift in Sources */,
+				34A026C121C50FB00033137E /* CustomUITextView.swift in Sources */,
+				34CF02A021C5653500CA53A4 /* BaseViewController.swift in Sources */,
+				34A026BB21C4E4810033137E /* LoginViewController.swift in Sources */,
+				34CF02AE21C61F9200CA53A4 /* RegisterViewController.swift in Sources */,
+				34A026BD21C4F8EE0033137E /* NewPostViewController.swift in Sources */,
+				34CF02A221C5661400CA53A4 /* Extensions.swift in Sources */,
 				4FBD09D621C4DF3E00506E45 /* ProfileViewController.swift in Sources */,
 				4FBD09D421C4DEDF00506E45 /* PostListViewController.swift in Sources */,
+				34CF02A821C5E2E700CA53A4 /* NetworkManager.swift in Sources */,
+				34A026C321C51D6E0033137E /* CardView.swift in Sources */,
+				34CF02AC21C5FEAD00CA53A4 /* UserVO.swift in Sources */,
 				4FBD09D021C4CF4E00506E45 /* ShadowTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,14 +527,18 @@
 			baseConfigurationReference = 0D78C56C39B62038C599017C /* Pods-PADC-IOS-DonationRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6CM5Y8X;
 				INFOPLIST_FILE = "PADC-IOS-DonationRequest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.padcmyanmar.PADC-IOS-DonationRequest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -456,14 +549,18 @@
 			baseConfigurationReference = A54EE4E024A9423D5618F248 /* Pods-PADC-IOS-DonationRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64F6CM5Y8X;
 				INFOPLIST_FILE = "PADC-IOS-DonationRequest/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.padcmyanmar.PADC-IOS-DonationRequest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
