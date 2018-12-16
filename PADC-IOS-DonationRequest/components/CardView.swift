@@ -2,20 +2,22 @@
 //  CardView.swift
 //  PADC-IOS-DonationRequest
 //
-//  Created by Ye Pyae Sone Tun on 12/15/18.
+//  Created by Ye Ko Ko Htet on 12/15/18.
 //  Copyright © 2018 padcmyanmar. All rights reserved.
 //
 
-
+import Foundation
 import UIKit
+
 class CardView: UIView {
     
-    @IBInspectable var cornerRadius: CGFloat = 1
+    @IBInspectable var cornerRadius: CGFloat = 2
     
     @IBInspectable var shadowOffsetWidth: Int = 0
-    @IBInspectable var shadowOffsetHeight: Int = 0
+    @IBInspectable var shadowOffsetHeight: Int = 1
     @IBInspectable var shadowColor: UIColor? = UIColor.black
-    @IBInspectable var shadowOpacity: Float = 0.1
+    @IBInspectable var shadowOpacity: Float = 0.5
+
     
     override func layoutSubviews() {
         layer.cornerRadius = cornerRadius
@@ -23,7 +25,8 @@ class CardView: UIView {
         
         layer.masksToBounds = false
         layer.shadowColor = shadowColor?.cgColor
-        layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight)
+        layer.shadowOffset = CGSize(width: shadowOffsetWidth, height: shadowOffsetHeight);
+
         layer.shadowOpacity = shadowOpacity
         layer.shadowPath = shadowPath.cgPath
     }
